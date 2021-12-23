@@ -8,12 +8,14 @@ import {
   NavLink,
 } from "./NavbarElements";
 
-const index = () => {
+const Navbar = () => {
   return (
     <div>
       <Nav>
         <NavLink to="/">
           <h1>Logo</h1>
+          {/* <img src{require('/...')} 
+          alt="logo"/> */}
         </NavLink>
         <Bars />
         <NavMenu>
@@ -35,4 +37,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Navbar;
