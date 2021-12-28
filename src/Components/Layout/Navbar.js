@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div>
       <Nav>
-        <NavLink to="/">
+        <NavLink to="/Home" activeStyle>
           <h1>Logo</h1>
           {/* <img src{require('/...')} 
           alt="logo"/> */}
@@ -27,6 +27,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/Profile" activeStyle>
             Profile
+          </NavLink>{" "}
+          <NavLink to="/Chat" activeStyle>
+            Chat
           </NavLink>
           <NavBtn>
             <NavBtnLink to="/signin">Sign in</NavBtnLink>
