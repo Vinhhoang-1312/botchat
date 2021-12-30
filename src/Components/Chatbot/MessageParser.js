@@ -5,7 +5,13 @@ class MessageParser {
   }
 
   parse(message) {
-    console.log(message);
+    const lowercase = message.toLowerCase();
+    if (lowercase.includes("hello")) {
+      this.actionProvider.greet();
+    }
+    if (lowercase.includes("ngu") || lowercase.includes("ngu nhu bo")) {
+      this.actionProvider.chuinhau();
+    }
   }
 }
 
